@@ -2,3 +2,7 @@ target/
 *.o
 *.so
 Cargo.lock
+
+# Zig build artifacts
+zig-out/
+.zig-cache/
