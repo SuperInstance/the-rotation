@@ -1,0 +1,11 @@
+[package]
+name = "pid-cascade"
+version = "0.1.0"
+edition = "2021"
+description = "Two-level cascade PID controller for the Rotation: resource PID → cognitive PID with gain scheduling"
+
+[lib]
+name = "pid_cascade"
+path = "src/lib.rs"
+
+[dependencies]

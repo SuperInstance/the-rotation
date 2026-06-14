@@ -1,0 +1,15 @@
+[package]
+name = "rotation-core"
+version = "0.1.0"
+edition = "2021"
+description = "The Rotation orchestrator: binds all 5 layers into one atomic rotation pass with concurrent state management"
+
+[lib]
+name = "rotation_core"
+path = "src/lib.rs"
+
+[dependencies]
+neon-kernel = { path = "../neon-kernel" }
+log-tensor = { path = "../log-tensor" }
+pid-cascade = { path = "../pid-cascade" }
+attractor = { path = "../attractor" }

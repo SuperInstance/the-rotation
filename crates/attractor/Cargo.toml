@@ -1,0 +1,12 @@
+[package]
+name = "attractor"
+version = "0.1.0"
+edition = "2021"
+description = "Potential energy landscape engine for the Rotation: attractor basin dynamics, differentiation, and merging"
+
+[lib]
+name = "attractor"
+path = "src/lib.rs"
+
+[dependencies]
+libm = { version = "0.2", default-features = false }

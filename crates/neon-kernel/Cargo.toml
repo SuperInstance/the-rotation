@@ -1,0 +1,17 @@
+[package]
+name = "neon-kernel"
+version = "0.1.0"
+edition = "2021"
+description = "ARM NEON SIMD kernel for the Rotation engine: ternary matmul, PID batch, attractor step, lock-free channels"
+
+[lib]
+name = "neon_kernel"
+path = "src/lib.rs"
+
+[dependencies]
+
+[features]
+default = []
+
+[target.aarch64-unknown-linux-gnu.dependencies]
+core_arch = { git = "https://github.com/rust-lang/stdarch.git", optional = true }

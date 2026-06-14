@@ -1,0 +1,12 @@
+[package]
+name = "log-tensor"
+version = "0.1.0"
+edition = "2021"
+description = "LOG-tensor cycle closure engine for the Rotation: 4×4 transformation validation with bottleneck detection"
+
+[lib]
+name = "log_tensor"
+path = "src/lib.rs"
+
+[dependencies]
+libm = { version = "0.2", default-features = false }
